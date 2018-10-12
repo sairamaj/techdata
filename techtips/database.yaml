@@ -1,0 +1,7 @@
+- 
+    name: restore.withforce
+    command: alter database dbname set single_user with rollback immediate ; restore database dbname from disk='' with replace
+    description: Restores the database.
+
+
+

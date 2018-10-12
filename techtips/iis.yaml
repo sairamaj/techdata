@@ -1,0 +1,14 @@
+- 
+    name: wp.list
+    command: c:\Windows\system32\inetsrv\appcmd list wp
+    description: Lists worker processes
+
+- 
+    name: wp.list.pid
+    command: c:\Windows\system32\inetsrv\appcmd list wp | find /I "%1"
+    description: Finds specific w3wp for app pool
+-
+    name: wp.recycle
+    command: c:\windows\system32\inetsrv\appcmd recycle apppool apppoolname
+    description: Recycles the app pool.
+    

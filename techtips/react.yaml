@@ -1,0 +1,4 @@
+- 
+    name: app.create
+    description: creates react app with no build configuration
+    url: https://github.com/facebook/create-react-app

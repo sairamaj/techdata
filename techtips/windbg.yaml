@@ -1,0 +1,6 @@
+-
+  name: ie.security.off
+  command: Server Manager => Local Server => IE enhanced security off
+  description: Working on dev machines to stop popups.
+
+  

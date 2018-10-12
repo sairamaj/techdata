@@ -1,0 +1,4 @@
+- 
+    name: reducer.best.practice
+    description: every Reducer you write should be a pure function with no side-effects — No API calls or updating a value outside the scope of the function
+    url: https://medium.freecodecamp.org/understanding-redux-the-worlds-easiest-guide-to-beginning-redux-c695f45546f6

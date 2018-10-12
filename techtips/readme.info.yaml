@@ -1,0 +1,122 @@
+-
+    name: microservices.net
+    url: https://aka.ms/microservicesebook
+-
+    name: microservices.net.sample
+    url: https://aka.ms/microservicesarchitecture
+-
+    name: js.comparision
+    url: https://www.developereconomics.com/feature-comparison-of-4-popular-js-mv-frameworks
+-
+    name: clean-architecture
+    url: https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html
+-
+    name: onion-architecture
+    url: https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/
+    
+- 
+    name: read.entlib
+    url: https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff648951(v%3dpandp.10)
+-
+    name: read.patterns
+    url: https://www.u-cursos.cl/usuario/f133dab21b6cbf814b4607124f431358/mi_blog/r/head_first_design_patterns.pdf
+-
+    name: pattern.static.cling
+    url: https://deviq.com/static-cling/
+-
+    name: pattern.new.glue 
+    url: https://ardalis.com/new-is-glue
+-
+    name: build.aspnet.razor
+    url: https://msdn.microsoft.com/en-us/magazine/mt842512.aspx
+-
+    name: ardalis.blog
+    url: https://ardalis.com/blog
+-
+    name: services_in_ddd
+    url: http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/
+-
+    name: pattern.command
+    url: https://en.wikipedia.org/wiki/Command_pattern
+-
+    name: pattern.specification
+    url: https://deviq.com/specification-pattern/
+-
+    name: ddd.fundamentals
+    url: http://bit.ly/ddd-fundamentals
+-
+    name: ddd.library
+    url: http://bit.ly/PS-design-patterns
+-
+    name: ddd.plainenglish
+    url: http://bit.ly/2pmVgK2
+-
+    name: developer.requirement
+    url: https://medium.freecodecamp.org/a-roadmap-to-becoming-a-web-developer-in-2017-b6ac3dddd0cf
+-
+    name: free.code
+    url: https://www.freecodecamp.org/
+-
+    name: react
+    url: https://egghead.io/lessons/react-conditionally-render-a-react-component
+-
+    name: codesanbox
+    url: https://codesandbox.io/
+-
+    name: netlify
+    url: https://www.netlify.com/
+-
+    name: rest.api.best.practices
+    url: https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
+-
+    name: restapi.links
+    url: https://stormpath.com/blog/linking-and-resource-expansion-rest-api-tips
+-
+    name: rest.api.design
+    url: https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
+-
+    name: data.at.rest
+    url:  http://www.alertboot.com/blog/blogs/endpoint_security/archive/2009/03/13/what-is-data-at-rest-encryption.aspx
+-
+    name: react-redux
+    url: https://www.sohamkamani.com/blog/2017/03/31/react-redux-connect-explained/
+-
+    name: read.emmanuel.git
+    url: https://github.com/ohansemmanuel?tab=repositories
+-
+    name: redux
+    url: https://medium.freecodecamp.org/understanding-redux-the-worlds-easiest-guide-to-beginning-redux-c695f45546f6
+-
+    name: redux.store.data
+    url: https://www.youtube.com/watch?v=aJxcVidE0I0&feature=youtu.be
+-
+    name: flex.css
+    url: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+-
+    name: redux.workshops
+    url: https://blog.isquaredsoftware.com/presentations/workshops/redux-fundamentals/ui-layer.html#/1
+-
+    name: azure.vm.create
+    url: https://github.com/mikepfeiffer/azure-rm-vm
+-
+    name: azure.quickstart.templates
+    url: https://github.com/Azure/azure-quickstart-templates
+-
+    name: azure.vm.resourcetemplate.deploy
+    url: https://github.com/mikepfeiffer/iis-webdeploy
+-
+    name: what.is.myip
+    url: http://www.whatsmyip.org
+-
+    name: azure.resource.graph
+    url: https://docs.microsoft.com/en-us/azure/governance/resource-graph/samples/starter
+-
+    name: microsoft.learning.azure
+    url: https://docs.microsoft.com/en-us/learn/azure/
+-
+    name: microsoft.architecture
+    url: https://docs.microsoft.com/en-us/azure/architecture/
+-
+    name: api.testing
+    url: https://smartbear.com/SmartBear/media/ebooks/SoapUI-101-Beginners-Guide-to-API-Testing.pdf
+    

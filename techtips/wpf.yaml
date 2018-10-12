@@ -1,0 +1,41 @@
+- 
+    name: grid.splitter
+    command: <GridSplitter Grid.Row="0" Grid.Column="1" Height="Auto" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+    description: Split in window
+-
+    name: textbox.multiline
+    command: TextWrapping="Wrap" AcceptsReturn="True"
+-
+    name: use.avalonedit
+    command: package AvalonEdit and System.Windows.Interactivity.WPF.
+             <avalonedit:TextEditor Grid.Row="0" Grid.Column="0"
+               Style="{StaticResource AvalonTextBoxStyles}">
+                 <i:Interaction.Behaviors>
+                   <views:AvalonEditBehaviour GiveMeTheText="{Binding CoreResponse, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                </i:Interaction.Behaviors>
+             </avalonedit:TextEditor>
+            source ->            https://stackoverflow.com/questions/18964176/two-way-binding-to-avalonedit-document-text-using-mvvm
+-
+    name: gridview
+    command: <ListView ItemsSource="{Binding Data}" >
+              <ListView.View>
+                 <GridView>
+                     <GridViewColumn  DisplayMemberBinding="{Binding Timestamp}">
+                       <GridViewColumnHeader Tag="Timestamp" Content="Timestamp" VerticalContentAlignment="Center"/>
+                     </GridViewColumn>
+                 </GridView>
+               </ListView.View>
+            </ListView>
+-
+    name: button.up.down.arrow
+    command: <Button FontFamily="Marlett" FontSize="20" Content="5"/>
+             <Button FontFamily="Marlett" FontSize="20" Content="6"/>
+    description: Displays up and down arrow.
+-
+    name: Marlett Characters
+    url: https://reactos.org/wiki/Marlett_Characters
+-
+    name: button.flat
+    command: <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="{Binding Text}" Command="           {Binding SortCommand}"/>
+
+

@@ -1,0 +1,21 @@
+- 
+    name: tls.set
+    command: 'ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;'
+    description: Sets TLs12 in .NET process
+-
+    name: cert.ignore
+    command: 'ServicePointManager.ServerCertificateValidationCallback += (s, e1,e2,e3) => true;'
+    description: Ignores certificate in .NET process.
+-
+    name: cert.ignore.config
+    command: '<configuration>
+   <system.net>
+    <settings>
+      <servicePointManager
+          checkCertificateName="false"
+          checkCertificateRevocationList="false"        
+      />
+    </settings>
+  </system.net>
+</configuration>'
+    description: add it to app.config

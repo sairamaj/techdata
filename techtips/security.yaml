@@ -1,0 +1,19 @@
+- 
+    name: create.cert
+    command: openssl req -days 1095 -x509 -out localhost.crt -keyout localhost.key -newkey rsa:2048 -nodes -sha256 -subj "/CN=localhost" -extensions EXT -config ./localhost.config
+            [dn]
+            CN=localhost
+
+            [req]
+            distinguished_name = dn
+
+            [EXT]
+            subjectAltName=DNS:localhost
+            keyUsage=digitalSignature
+            extendedKeyUsage=serverAuth
+    description: create localhost certificate
+-
+    name: ssh.overview
+    command: ssh-keygen.exe
+    description: overview
+    url: https://github.com/sairamaj/developer/tree/master/ssh

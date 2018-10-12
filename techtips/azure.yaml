@@ -1,0 +1,41 @@
+- 
+    name: context.set
+    command: Set-AzureRMContext -Subscription id
+    description: Use Get-AzureRmSubscription to list
+                  Set-AzureRmContext and then
+                Get-AzureRmContext
+-
+    name: doc.function.deployment
+    command: https://github.com/projectkudu/kudu/wiki/Customizing-deployments
+    description: .deployment commands documented here
+-
+    name: dashboard.style
+    command: double click on empty area of dashboard
+-
+    name: kudu.logstream
+    command: curl -v -u user:pwd https://<site>.scm.azurewebsites.net/api/logstream
+-
+    name: vm.automate
+    url: https://buildazure.com/2018/04/17/using-chocolatey-with-azure-vms/
+-
+    name: fuctionapp.portal.readonly
+    description: Source control is hooked up and hence cannot be edited in portal
+-
+    name: kudu.deployments
+    command: curl -v -u user:pwd https://<site>.scm.azurewebsites.net/deployments   
+-
+    name: appservice.node.version
+    command: set WEBSITE_NODE_DEFAULT_VERSION to version number `
+             WEBSITE_NODE_DEFAULT_VERSION=8.9.3
+-
+    name: dashboard.add.subscriptions
+    url: http://spartansoft.net/add-usage-azure-subscriptions-portal-dashboard/
+-
+    name: func.local.install
+    url: https://github.com/Azure/azure-functions-core-tools
+-
+    name: func.csharp.run.commandline
+    command: run from output directory with func host start
+-
+    name: deploy.travis
+    url: https://docs.travis-ci.com/user/deployment/azure-web-apps/    

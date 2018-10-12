@@ -1,0 +1,63 @@
+-
+  name: separate-of-concerns
+  description: Software should be separated based on kinds of work it performs.
+  url: https://deviq.com/separation-of-concerns/
+-
+  name: encaptulations
+  description: Different parts of an application should use encapsulation to insulate them from other parts of the
+               application. Application components and layers should be able to adjust their internal implementation
+               without breaking their collaborators as long as external contracts are not violated. Proper use of
+               encapsulation helps achieve loose coupling and modularity in application designs, since objects and
+               packages can be replaced with alternative implementations so long as the same interface is maintained
+  url: https://deviq.com/encapsulation/
+-
+  name: dependency-inversion
+  description: Dependency inversion is a key part of building loosely-coupled applications, since implementation
+               details can be written to depend on and implement higher level abstractions, rather than the other
+               way around. The resulting applications are more testable, modular, and maintainable as a result. The
+               practice of dependency injection is made possible by following the dependency inversion principle               
+  url: https://deviq.com/dependency-inversion-principle/              
+-
+  name: explicit-dependencies               
+  description: By following the explicit dependencies principle, your classes and methods are being honest with their
+               clients about what they need in order to function. This makes your code more self-documenting and
+               your coding contracts more user-friendly, since users will come to trust that as long as they provide
+               what’s required in the form of method or constructor parameters, the objects they’re working with will
+              behave correctly at run time
+  url: https://deviq.com/explicit-dependencies-principle/
+-
+  name: single-responsibility
+  description: The single responsibility principle applies to object-oriented design but can also be considered as an
+               architectural principle similar to separation of concerns. It states that objects should have only one
+               responsibility and that they should have only one reason to change. Specifically, the only situation in
+               which the object should change is if the manner in which it performs its one responsibility must be 
+               updated. Following this principle helps to produce more loosely-coupled and modular systems, since
+               many kinds of new behavior can be implemented as new classes, rather than by adding additional
+               responsibility to existing classes. Adding new classes is always safer than changing existing classes,
+               since no code yet depends on the new classes
+-
+  name: dont-repeat-yourself
+  description: The application should avoid specifying behavior related to a particular concept in multiple places as
+               this is a frequent source of errors.
+  url: https://deviq.com/don-t-repeat-yourself/
+-
+  name: persistent-ignorance
+  description: Refers to types that need to be persisted, but whose code is unaffected by
+               the choice of persistence technology. Such types in .NET are sometimes referred to as Plain Old CLR
+               Objects (POCOs), because they do not need to inherit from a particular base class or implement a
+               particular interface
+  url: https://deviq.com/persistence-ignorance/               
+-
+  name: bounded-context
+  description: Bounded contexts are a central pattern in Domain-Driven Design. They provide a way of tackling
+               complexity in large applications or organizations by breaking it up into separate conceptual modules.
+               Each conceptual module then represents a context which is separated from other contexts (hence,
+               bounded), and can evolve independently. Each bounded context should ideally be free to choose its
+               own names for concepts within it and should have exclusive access to its own persistence store 
+  url: https://martinfowler.com/bliki/BoundedContext.html
+-
+  name: solid
+  url: http://bit.ly/SOLID-OOP
+
+
+

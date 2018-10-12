@@ -1,0 +1,93 @@
+-
+    name: definition
+    description: A Pattern is solution to the problem in a context.
+                 context in which pattern applies.
+                 problem is the goal trying to achieve
+                 soltion is what you are after.
+-
+  name: templatemethod
+  description: Defines the skelton of a algorithm in a method, deferring some steps to subclasses.
+               Template method let redifne certain steps of an algorithm without changing the algorithm structure
+-
+  name: holywood principle
+  description: don't call us , we will call you
+      
+- 
+  name: fundamentals
+  description: >
+                Identity the aspects of your application that vary and separate them from what stays the same.
+                Program to interface , not an implementation.
+                Favor composition over inheritance.
+                Strive for loosely coupled designs between objects that interact.
+                Classes should be open for extension, but closed for modification (applying the Open-Closed Principle EVERYWHERE is wasteful, unnecessary, and can lead to complex, hard to understand code).
+                Principle of least knowledge (talk only to your immediate friends).
+                Class should have only one reason to change (Single Responsibility)
+-  
+  name: strategy
+  description: Defines a family of algorithms, encaptuates each one and makes them interchangable.
+               Strategy lets the alogirthm vary independently from clients that use it.
+-
+  name: observer
+  description: Defines a one-to-many dependency between objects so that when one object(subject) changes state,                all of its dependencies (observers) are notified and updated automatically.
+               publishers + subscribers = observer
+-
+  name: decorator
+  description: Also known as wrapper.
+               Attaches additional responsibilities to objects dynamically.
+               Decorators provide a flexibe alternative to subclassing for extending functionality.
+-
+  name: factoryMethod
+  description: Defines an interface for creating an object,but lets subclass decide which class to instantiate.
+               Factory method lets a class defer instantiation to subclass.
+-
+  name: abstractfactory
+  description: Provides an interface for creating families of related or dependent objects without specifying                  their concreate classes.Ofen the methods of an Abstract Factory are implemented as factory method.
+-
+  name: singleton
+  description: Ensures there is only one instance for given class.
+-
+  name: command
+  description: Allows you to decouple the requestor of an action from the object that actualy performs the action.
+               Encaptulates request as an object, there by letting you parameterize other objects with different
+               requests, queue or log requests, and support undoable operations.
+-
+  name: adatper
+  description: Converts interface of a class in to another interface the client expects.Adapter lets classes work              together that could not otherwise because of incompatible interfaces.
+-
+  name: facade
+  description: Provides a unified interface to the set of interfaces in subsystem.Facade defines higher level                  interface the makes the subsystems easier to use.
+-
+  name: decoarator.adapter.facade
+  description: decorator-> does not alter interface,but adds responsibilities.
+               adapter -> converts one interface to another (intent is alter interface).
+               facade  -> makes an interface simpler (intent provide simplified interface).
+-
+  name: leastknowledge
+  description: Invoke methods only
+               The object itself.
+               Objects passed in a parameter to the method.
+               Any object the method creates or instantiates.
+               Any components of the object.
+-
+  name: iterator
+  description: Provides a way to access the elements of an aggregate object sequentially without exposing its underlaying representation.
+-
+  name: composite
+  description: Allows you to compose objects in to tree structure to represent part-whole hierarchies. 
+               Composite lets clients treat individual objects and compositions of objects uniformaly.
+               (example-> GUI components)
+-
+  name: state
+  description: Allows an object to alter its behavior when individual state changes.The object will appear to change its class.
+                 related -> strategy, template
+-
+  name: proxy
+  description: Provides a surrogate or placeholder for another object to control access it.
+                 related -> Decorators,Adapter,facade
+                 (proxy controls where as decorator adds behavior)
+-
+  name: mvc
+  description: model view controller
+-  
+  name: mvvm 
+  description: model view viewmodel

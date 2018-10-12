@@ -1,0 +1,35 @@
+- 
+    name: tls.set
+    command: '[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12'
+    description: Sets TLS in powershell.
+-
+    name: ssl.ignore
+    command: '[System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true}'
+    description: Ignores the certificate warning and let you proceed.
+- 
+    name: tip.showcommand
+    command : Show-Command CommandName
+    description: 'Shows the parameters in nice GUI (ex: show-command Get-AzureRmResourceGroup )'
+-
+    name: doc.startup.commands
+    command: https://www.howtogeek.com/126469/how-to-create-a-powershell-profile/
+    description: Add startup commands whenever you launch default powershell
+-
+    name: script.startuppath
+    command: $PSScriptRoot
+    description: Use this to get current directory in powershell script.startuppath
+-
+    name: copy.files
+    command: Start-BitsTransfer
+    description: creates a Background Intelligent Transfer Service (BITS) transfer job to transfer one or more files between a client computer and a server
+    url: https://docs.microsoft.com/en-us/powershell/module/bitstransfer/start-bitstransfer?view=win10-ps
+-
+    name: download.file
+    command: '(New-Object System.Net.WebClient).DownloadFile("https://github.com/git-for-windows/git/releases/do
+              wnload/v2.19.0.windows.1/Git-2.19.0-64-bit.exe", "gitsetup.exe")'
+    description: To automate download of setups.
+-
+    name: load.configfile
+    url: https://sarafian.github.io/2016/07/18/set-data-app-config-data-version-5.html
+    description: Loads application configuration file in powershell
+    

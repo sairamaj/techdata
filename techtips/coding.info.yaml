@@ -1,0 +1,7 @@
+- 
+    name: use.errormessage.1
+    description: Use different error messages in exceptions at different places to identify the location
+-
+    name: pure.functions
+    description: will not have side effects.relay only on inputs.
+    

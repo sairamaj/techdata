@@ -1,0 +1,60 @@
+- 
+    name: branch.delete.local
+    command: git branch -d <branchname>
+    description: Delete local branch
+- 
+    name: branch.delete.remote
+    command:  git push origin --delete <branchname>
+    description: Delete remote branch
+- 
+    name: branch.rename
+    command:  git branch m old new
+    description: If you puhsed the branch to remote then
+                 git push origin --delete old
+                 git push origin new
+- 
+    name: add.modified
+    command:  git add -u
+    description: Adds modified files only
+- 
+    name: commit.comment.change
+    command:  git commit --amend
+    description: Changes the last commit comment
+-
+    name: remote.show.origin
+    command: git remote show origin
+    description: shows the url of the origin
+-
+    name: remote.add
+    command: git remote add url `
+             git remote set-url origin url
+    description: add another url
+-
+    name: remove.files
+    command: git clean -xdf
+    description: cleans all changes (beware)
+-
+    name: remote.show
+    command: git remote -v
+    description: shows the urls of remote
+-
+    name: setup.mergetool.as.vscode
+    command: git config --global merge.tool vscode `
+            git config --global mergetool.vscode.cmd "code --wait $MERGED"
+    description: set up merging tool
+-
+    name: setup.difftool.as.vscode
+    command: git config --global diff.tool vscode `
+             git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+-
+    name: remove.orig.files
+    command: git clean -f
+    description: removes the .orig files if you are sure merge is done.
+-
+    name: list.remote
+    command: git branch -r
+    description: Lists remote branches
+-
+    name: cherrypick
+    command: git cherry-pick <commitid>
+    description: used for merging a particular commit

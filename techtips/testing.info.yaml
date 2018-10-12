@@ -1,0 +1,8 @@
+- 
+    name: integration
+    description: perspetive of developer, to verify that some components o the sytsem work correctly together.
+-
+    name: functional
+    description: perspective of the user, and verify that ocrrectness of the system based on its requirement.
+                “Many times the development of a system is likened to the building of a house. While this analogy isn't quite correct, we can extend it for the purposes of understanding the difference between unit and functional tests. Unit testing is analogous to a building inspector visiting a house's construction site. He is focused on the various internal systems of the house, the foundation, framing, electrical, plumbing, and so on. He ensures (tests) that the parts of the house will work correctly and safely, that is, meet the building code. Functional tests in this scenario are analogous to the homeowner visiting this same construction site. He assumes that the internal systems will behave appropriately, that the building inspector is performing his task. The homeowner is focused on what it will be like to live in this house. He is concerned with how the house looks, are the various rooms a comfortable size, does the house fit the family's needs, are the windows in a good spot to catch the morning sun. The homeowner is performing functional tests on the house. He has the user's perspective. The building inspector is performing unit tests on the house. He has the builder's perspective.”
+                source -> http://www.softwaretestingtricks.com/2007/01/unit-testing-versus-functional-tests.html

@@ -1,0 +1,17 @@
+-
+  name: array.some
+  command: data.some(d=> <condition>)
+  description: If any condition matches return true.
+-
+  name: import.curly.brace.default
+  command: import A from './A'
+  description: without curly braces it is default. with curly braces it is specific import.
+  url: https://stackoverflow.com/questions/36795819/when-should-i-use-curly-braces-for-es6-import/36796281
+-
+  name: sleep.async
+  command: const timeout = ms => new Promise(res => setTimeout(res, ms));await timeout(5000)
+  description: sleep for milliseconds
+  url: https://gist.github.com/daliborgogic/7ee40bcff586ae08b33bf929172d61e8
+-
+  name: typescript.convert.string.number
+  command: use + before string
