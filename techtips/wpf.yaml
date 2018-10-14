@@ -14,10 +14,10 @@
                    <views:AvalonEditBehaviour GiveMeTheText="{Binding CoreResponse, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                 </i:Interaction.Behaviors>
              </avalonedit:TextEditor>
-            source ->            https://stackoverflow.com/questions/18964176/two-way-binding-to-avalonedit-document-text-using-mvvm
+             source ->            https://stackoverflow.com/questions/18964176/two-way-binding-to-avalonedit-document-text-using-mvvm
 -
     name: gridview
-    command: <ListView ItemsSource="{Binding Data}" >
+    command: '<ListView ItemsSource="{Binding Data}" >
               <ListView.View>
                  <GridView>
                      <GridViewColumn  DisplayMemberBinding="{Binding Timestamp}">
@@ -25,7 +25,7 @@
                      </GridViewColumn>
                  </GridView>
                </ListView.View>
-            </ListView>
+             </ListView>'
 -
     name: button.up.down.arrow
     command: <Button FontFamily="Marlett" FontSize="20" Content="5"/>

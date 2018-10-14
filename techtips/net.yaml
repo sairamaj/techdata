@@ -9,13 +9,13 @@
 -
     name: cert.ignore.config
     command: '<configuration>
-   <system.net>
-    <settings>
-      <servicePointManager
-          checkCertificateName="false"
-          checkCertificateRevocationList="false"        
-      />
-    </settings>
-  </system.net>
-</configuration>'
+                <system.net>
+                    <settings>
+                    <servicePointManager
+                        checkCertificateName="false"
+                        checkCertificateRevocationList="false"        
+                    />
+                    </settings>
+                </system.net>
+                </configuration>'
     description: add it to app.config
