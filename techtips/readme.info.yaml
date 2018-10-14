@@ -119,4 +119,9 @@
 -
     name: api.testing
     url: https://smartbear.com/SmartBear/media/ebooks/SoapUI-101-Beginners-Guide-to-API-Testing.pdf
-    
+-
+    name: http.bin
+    url: http://httpbin.org/
+-
+    name: microsoft.sample.api
+    url: calcapi.cloudapp.net
