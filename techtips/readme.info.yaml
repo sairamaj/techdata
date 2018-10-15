@@ -125,3 +125,7 @@
 -
     name: microsoft.sample.api
     url: calcapi.cloudapp.net
+-
+    name: editor.swagger
+    url: http://editor.swagger.io/
+    
