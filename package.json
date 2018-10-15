@@ -1,5 +1,14 @@
 {
     "dependencies": {
-        "yamljs": "0.3.0"
+        "yamljs": "0.3.0",
+        "redis": "2.8.0",
+        "bluebird": "3.5.2"
+    },
+    "devDependencies": {
+        "gulp": "latest",
+        "gulp-util": "latest"
+    },
+    "scripts": {
+        "build" : "node uploadtoredis.js"
     }
 }
