@@ -3,6 +3,7 @@ node_js:
  - "node"
 install:
   - npm install
+  - npm run build
   - npm run verify
   - npm run upload
 git:
