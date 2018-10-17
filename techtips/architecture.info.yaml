@@ -22,7 +22,7 @@
   description: By following the explicit dependencies principle, your classes and methods are being honest with their
                clients about what they need in order to function. This makes your code more self-documenting and
                your coding contracts more user-friendly, since users will come to trust that as long as they provide
-               what’s required in the form of method or constructor parameters, the objects they’re working with will
+               what�s required in the form of method or constructor parameters, the objects they�re working with will
                behave correctly at run time
   url: https://deviq.com/explicit-dependencies-principle/
 -
@@ -57,7 +57,5 @@
   url: https://martinfowler.com/bliki/BoundedContext.html
 -
   name: solid
+  description: solid
   url: http://bit.ly/SOLID-OOP
-
-
-

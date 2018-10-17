@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+ - "node"
+install:
+  - npm install
+  - npm run verify
+  - npm run upload
+git:
+   depth: 9999999  

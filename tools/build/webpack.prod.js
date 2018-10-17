@@ -9,10 +9,11 @@ module.exports = {
   target: 'node',
   entry: {
     'upload': $.root('./src/upload.ts'),
+    'verifydata': $.root('./src/verifydata.ts'),
   },
   output: {
     path: $.root('dist'),
-    filename: '[name]/upload.js',
+    filename: '[name]/index.js',
     libraryTarget: 'commonjs2'
   },
   module: {
@@ -46,5 +47,9 @@ module.exports = {
   node: {
     __filename: false,
     __dirname: false,
-  }
+  },
+  devServer: {
+    contentBase: 'src',
+    publicPath: 'dist'
+ }
 };
