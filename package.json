@@ -33,6 +33,7 @@
         "build": "npm run clean && webpack --config ./tools/build/webpack.prod.js",
         "dev": "webpack-dev-server --hot",
         "verify" : "node dist/verifydata/index.js",
-        "upload" : "node dist/upload/index.js"
+        "upload" : "node dist/upload/index.js",
+        "test" : "node dist/verifydata/index.js"
     }
 }
