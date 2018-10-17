@@ -1,6 +1,28 @@
 -
-  name: ie.security.off
-  command: Server Manager => Local Server => IE enhanced security off
-  description: Working on dev machines to stop popups.
-
-  
+  name: adplus.dump.onexception
+  command:  '<ADPlus>
+              <Settings>
+                <RunMode>CRASH</RunMode>
+                <Option>Quiet</Option>
+              </Settings>
+              <Exceptions>
+                <Option>FullDump</Option>
+                <Config>
+                  <Code>clr</Code>
+                  <Actions1>Void</Actions1>
+                  <CustomActions1>
+                  .loadby sos mscorwks;
+                  !soe  System.InvalidOperationException 3;
+                  .echo @t3;
+                          .if(@$t3==1)
+                  {
+                    .dump /ma /u c:\\temp\\test.dmp 
+                  }
+                </CustomActions1>
+                <ReturnAction1>gn</ReturnAction1>
+                </Config>
+              </Exceptions>  
+            </ADPlus>'
+  description:  Allows to create memory dump on particular exception.           
+    
+    
