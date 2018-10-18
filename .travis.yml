@@ -1,19 +1,10 @@
-matrix:
-  include:
-    - language: node_js
-      node_js:
-        - "stable"
-      cache:
-        directories:
-        - "node_modules"
-      script: 
-          - npm install
-          - npm run build
-          - npm run verify
-          - npm run upload    
-
-    - language: csharp
-      mono: none
-      dotnet: 2.1.403
-      script:
-        - dotnet run --project src\uploadimages\uploadimages.csproj
+language: node_js
+node_js:
+ - "node"
+install:
+  - npm install
+  - npm run build
+  - npm run verify
+  - npm run upload
+git:
+   depth: 9999999  

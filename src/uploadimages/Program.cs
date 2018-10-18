@@ -1,6 +1,5 @@
 ﻿using System;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Blob;
+using System.IO;
 
 namespace uploadimages
 {
@@ -8,13 +7,23 @@ namespace uploadimages
     {
         static void Main(string[] args)
         {
-            CloudStorageAccount storageAccount;
-            CloudBlobContainer cloudBlobContainer;
-            string sourceFile;
-            string destinationFile = null;
-            
+            if( args.Length < 1 ){
+                Console.WriteLine("Directory name required.");
+                System.Environment.Exit(-1);
+            }
+
             string storageConnectionString = Environment.GetEnvironmentVariable("storageconnectionstring");
-            Console.WriteLine(storageConnectionString);
+            Uploader loader = new Uploader(storageConnectionString,"saitech");
+            var path = args[0];
+            foreach(var fileName in Directory.GetFiles(path) ){
+                var destinationName = $"images/{Path.GetFileName(fileName)}";
+                Console.WriteLine($"Uploading {fileName} as {destinationName}");
+                loader.UploadAsync(fileName,destinationName).GetAwaiter().GetResult();
+            }
+
+            // Create a blob client.
+            Console.WriteLine("done");
+            System.Environment.Exit(0);
         }
     }
 }
