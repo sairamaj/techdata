@@ -3,6 +3,9 @@
 # compiled output
 src/dist/
 
+bin/
+obj/
+
 dist/
 
 # dependencies
