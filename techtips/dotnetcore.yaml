@@ -1,7 +1,18 @@
-- name: problem.duplicate.assembly.version
+- 
+  name: problem.duplicate.assembly.version
   url: https://johnkoerner.com/csharp/dealing-with-duplicate-attribute-errors-in-net-core/
-- name: image.display
+- 
+  name: image.display
   description: put images in wwwroot/images; Make sure app.UseStaticFiles();<img src="images/image.png"                       class="img-responsive"/>
-- name: set.development.environment
+- 
+  name: set.development.environment
   command: set ASPNETCORE_ENVIRONMENT=Development
   description: sets development environment.
+- 
+  name: dotnetsay
+  command: dotnet tool install -g dotnetsay
+  description: this is more like npm's global developer tools.
+  url: https://github.com/dotnet/docs/blob/master/docs/core/tools/global-tools.md
+-
+  name: core.tools
+  url: https://github.com/natemcmaster/dotnet-tools
