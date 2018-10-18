@@ -2,5 +2,13 @@
   name: ie.security.off
   command: Server Manager => Local Server => IE enhanced security off
   description: Working on dev machines to stop popups.
+-
+  name: batch.wait.foruserinput
+  command: set /p dummy=Press any key
+  description: Way of waiting in the batch file
+-
+  name: batch.check.error
+  command: if %ERRORLEVEL% NEQ 0 goto error
+  description: Checks program exit code and takes action.
 
   
