@@ -17,4 +17,4 @@ matrix:
       mono: none
       dotnet: 2.1.300
       script:
-        - dotnet run --project src\uploadimages\uploadimages.csproj techtips\images
+        - dotnet run --project src/uploadimages/uploadimages.csproj techtips/images
