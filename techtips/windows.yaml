@@ -10,5 +10,7 @@
   name: batch.check.error
   command: if %ERRORLEVEL% NEQ 0 goto error
   description: Checks program exit code and takes action.
-
-  
+-
+  name: batch.timeout
+  command: timeout
+  description: waits for given seconds.
