@@ -58,3 +58,7 @@
     name: cherrypick
     command: git cherry-pick <commitid>
     description: used for merging a particular commit
+-
+    name: find.parent
+    command: git show-branch
+    description: one way to find out the parent of branch
