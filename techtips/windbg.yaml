@@ -25,4 +25,8 @@
             </ADPlus>'
   description:  Allows to create memory dump on particular exception.           
     
-    
+-
+  name: dotnetcore
+  command: .loadby sos coreclr
+  url: https://bret.codes/net-core-and-windbg/
+  

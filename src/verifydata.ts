@@ -3,12 +3,13 @@ const path = require('path')
 
 class Verifier{
     async verifyAsync(dir:string){
-        console.log('in verifying...')
+        console.log(`verifying ${dir}`)
         let categories = await new TipManager(dir).getCategories()        
+        console.log(`${categories}`)
     }
 }
 
-new Verifier().verifyAsync('techtips')
+new Verifier().verifyAsync(`techtips`)
 .then(result=>{
     console.log("success.")
 })
