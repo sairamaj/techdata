@@ -3,10 +3,11 @@
         "async-file": "2.0.2",
         "await-fs": "1.0.0",
         "bluebird": "3.5.2",
+        "debug": "4.1.0",
+        "fs-promise": "^2.0.3",
         "full-text-search-light": "0.0.17",
         "redis": "2.8.0",
-        "yamljs": "0.3.0",
-        "debug": "4.1.0"
+        "yamljs": "0.3.0"
     },
     "devDependencies": {
         "@types/jest": "~22.2.3",

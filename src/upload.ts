@@ -26,7 +26,7 @@ class Uploader{
     }
 }
 
-new Uploader().uploadAsync('techtips')
+new Uploader().uploadAsync('techtips/yaml')
 .then(result=>{
     console.log("success.")
     RedisProxy.close();

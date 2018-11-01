@@ -3,6 +3,8 @@ import { Tip } from "./tip";
 import { Category } from './category';
 const YAML = require("yamljs");
 const aw = require('await-fs');
+const fsp = require('fs-promise');
+
 const debug = require('debug')('tipmanager')
 
 export class TipManager {
@@ -11,6 +13,7 @@ export class TipManager {
     }
     async getCategories(): Promise<Array<Category>> {
         let files = await aw.readdir(this.dir)
+        //let files = await fsp.readdir(this.dir)
         let categories = []
 
         for (var f of files) {
