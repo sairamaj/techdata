@@ -2,3 +2,8 @@
   name: cron.schedule
   url: http://www.quartz-scheduler.org/documentation/quartz-2.x/tutorials/crontrigger.html
   description: scheduling capabilities
+-
+  name: ci/cd
+  url: https://semaphoreci.com/blog/2017/07/27/what-is-the-difference-between-continuous-integration-continuous-deployment-and-continuous-delivery.html
+  description: different between continous integration , continous delivery and continous deployment
+  
