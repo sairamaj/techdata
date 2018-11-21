@@ -29,4 +29,7 @@
   name: dotnetcore
   command: .loadby sos coreclr
   url: https://bret.codes/net-core-and-windbg/
-  
+-
+  name: cpu
+  command: !threadpool
+
