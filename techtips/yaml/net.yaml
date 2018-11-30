@@ -19,3 +19,7 @@
                 </system.net>
                 </configuration>'
     description: add it to app.config
+-
+    name: nuget.create.publish
+    url: https://www.codeproject.com/Articles/1214420/Creating-a-Nuget-Package-Step-by-Step
+    
