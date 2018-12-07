@@ -32,4 +32,7 @@
     name: load.configfile
     url: https://sarafian.github.io/2016/07/18/set-data-app-config-data-version-5.html
     description: Loads application configuration file in powershell
+-
+    name: load.app.config
+    url: https://sarafian.github.io/2016/07/18/set-data-app-config-data-version-5.html
     
