@@ -32,4 +32,6 @@
 -
   name: cpu
   command: !threadpool
-
+-
+    name: mex.commands
+    command: .cordll -ve -u -l ; !fems tid -stat ; !lt
