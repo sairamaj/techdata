@@ -22,4 +22,6 @@
 -
     name: nuget.create.publish
     url: https://www.codeproject.com/Articles/1214420/Creating-a-Nuget-Package-Step-by-Step
-    
+-
+    name: task.cancellation
+    url: https://binary-studio.com/2015/10/23/task-cancellation-in-c-and-things-you-should-know-about-it/

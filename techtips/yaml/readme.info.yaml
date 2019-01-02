@@ -128,4 +128,6 @@
 -
     name: editor.swagger
     url: http://editor.swagger.io/
-    
+-
+    name: hockeyapp.for.mobile
+    url: https://www.hockeyapp.net/
