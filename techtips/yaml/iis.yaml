@@ -11,4 +11,7 @@
     name: wp.recycle
     command: c:\windows\system32\inetsrv\appcmd recycle apppool apppoolname
     description: Recycles the app pool.
-    
+-
+    name: wp.password
+    command:  c:\windows\system32\inetsrv\appcmd list apppool apppoolname /text:*
+    description: Get app pool password
