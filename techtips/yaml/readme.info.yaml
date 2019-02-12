@@ -131,3 +131,10 @@
 -
     name: hockeyapp.for.mobile
     url: https://www.hockeyapp.net/
+-
+    name: design.patterns
+    url: https://github.com/kamranahmedse/design-patterns-for-humans
+-
+    name: developer.roadmap
+    url: https://github.com/kamranahmedse/developer-roadmap
+    
