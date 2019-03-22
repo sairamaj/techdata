@@ -36,7 +36,8 @@
 * Add "Identity Providers" under "Azure AD B2C"
 * Go to user flow defined earlier
     * Enable the idetity providers
-    * Adding google (https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
+    * [Adding google](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
+    * [Adding Microsoft](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
 
 [Sample] (https://azure.microsoft.com/en-us/resources/samples/active-directory-b2c-dotnetcore-webapp/)
 

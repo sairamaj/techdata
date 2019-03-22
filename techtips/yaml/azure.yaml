@@ -39,3 +39,7 @@
 -
     name: deploy.travis
     url: https://docs.travis-ci.com/user/deployment/azure-web-apps/    
+-
+    name: azure.goto.ad
+    url: aad.portal.azure.com
+
