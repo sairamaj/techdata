@@ -1,0 +1,6 @@
+- 
+    name: save.variable
+    command: var json = JSON.parse(responseBody);
+             postman.setEnvironmentVariable("AccessToken", json.access_token);
+    description: Save the variable from response
+
