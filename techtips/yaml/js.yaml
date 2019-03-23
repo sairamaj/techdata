@@ -15,3 +15,7 @@
 -
   name: typescript.convert.string.number
   command: use + before string
+-
+  name: reduce.sample
+  command: var total = numbers.reduce((t, n) => t + n, 10);
+  description: second parameter is initial
