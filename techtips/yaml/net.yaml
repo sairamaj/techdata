@@ -25,3 +25,7 @@
 -
     name: task.cancellation
     url: https://binary-studio.com/2015/10/23/task-cancellation-in-c-and-things-you-should-know-about-it/
+-
+    name: task.return.completion
+    description: Task.CompletedTask and Task.FromResult(ret)
+    url: https://odetocode.com/blogs/scott/archive/2018/01/18/task-completedtask-and-task-result-tips.aspx
