@@ -31,6 +31,9 @@
     name: dashboard.add.subscriptions
     url: http://spartansoft.net/add-usage-azure-subscriptions-portal-dashboard/
 -
+    name: dashboard.add.vm
+    description : All resources -> filter resource group -> from ... select pin to dashboard
+-
     name: func.local.install
     url: https://github.com/Azure/azure-functions-core-tools
 -
@@ -42,4 +45,12 @@
 -
     name: azure.goto.ad
     url: aad.portal.azure.com
-
+-
+    name: keyvault.create.secret
+    description: az keyvault secret set --name db --value "db value" --vault-name saitestkv1
+-
+    name: keyvault.list.secrets
+    description: az keyvault secret list --vault-name saitestkv1
+-
+    name: keyvault.get.secret.ps
+    description: (Get-AzureKeyVaultSecret -VaultName saitestkv1 -Name db).SecretValueText

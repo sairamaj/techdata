@@ -33,5 +33,10 @@
   name: cpu
   command: !threadpool
 -
-    name: mex.commands
-    command: .cordll -ve -u -l ; !fems tid -stat ; !lt
+  name: mex.commands
+  command: .cordll -ve -u -l ; !fems tid -stat ; !lt
+-
+  name: static.variables
+  command: !name2ee <dllname>.dll <statictype> ; !dumpclass <EEClass>
+  url: https://winterdom.com/2009/05/05/dumping-static-fields-with-windbg
+  
