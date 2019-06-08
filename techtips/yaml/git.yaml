@@ -62,3 +62,7 @@
     name: find.parent
     command: git show-branch
     description: one way to find out the parent of branch
+-
+	name: remove.untrackedfiles
+	command: git rm -fd
+	description: Removes untracked files
