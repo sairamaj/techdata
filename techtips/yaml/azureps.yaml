@@ -1,0 +1,10 @@
+- 
+    name: get.serviceprincipal
+    command: Get-AzADServicePrincipal -DisplayName deployment
+
+-   name: list.roles
+    command: Get-AzRoleAssignment -ObjectId $x.id
+
+-   name: list.serviceprincipal.roles
+    command: Get-AzRoleAssignment -ServicePrincipalName http://deployment
+    

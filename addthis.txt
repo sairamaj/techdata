@@ -1,0 +1,11 @@
+{ "id": "/subscriptions/821d6eee-fe66-4c21-8e8b-ab80122b0d35/resourceGroups/deleteme/providers/Microsoft.Resources/deployments/apiTemplate/operations/DF034BC12EFD1C9A", "operationId": "DF034BC12EFD1C9A", "properties": { "provisioningOperation": "Create", "provisioningState": "Failed", "timestamp": "2019-04-12T22:54:52.556868Z", "duration": "PT1.0109648S", "trackingId": "9f5f5d4a-241c-4958-83b2-59de286eb388", "serviceRequestId": "ccbde2ae-2b36-48e5-899e-d6d13f7c0d4a", "statusCode": "BadRequest", "statusMessage": { "code": "InvalidOperation", "message": "API Management service is activating", "details": null, "innerError": null }, "targetResource": { "id": "/subscriptions/821d6eee-fe66-4c21-8e8b-ab80122b0d35/resourceGroups/deleteme/providers/Microsoft.ApiManagement/service/saitechapim-dev/apis/saitech", "resourceType": "Microsoft.ApiManagement/service/apis", "resourceName": "saitechapim-dev/saitech" } }}
+
+
+Problem: depends was not setup.
+solution: api should depend on service
+
+github raw url
+cache for 1min.
+
+customzing app service deployments.
+	https://github.com/projectkudu/kudu/wiki/Customizing-deployments
