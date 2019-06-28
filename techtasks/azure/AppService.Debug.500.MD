@@ -23,7 +23,7 @@
 * open eventlog.xml file in your favorite editor
 
 ### connecting Kudu
-* curl -v -u <deployment->user credential->username> https://<sitename>.scm.azurewebsites.net/api/logstream
-
+* curl -k -v -u <deployment->user credential->username> https://<sitename>.scm.azurewebsites.net/api/logstream
+* ![source](http://www.seirer.net/blog/2013/12/5/windows-azure-logstreaming-service-introducing-kudu)
 
 ### Error

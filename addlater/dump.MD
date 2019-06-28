@@ -298,3 +298,36 @@ foreach($p in $PsBoundParameters.Keys){
 
 ### Asp.net core file logging
 [source](https://nblumhardt.com/2016/10/aspnet-core-file-logger/)
+
+### Package was not being restored in .NET core 
+* Remvoed PrivateAssets attribute for the package.
+
+#### Web jobs
+* Location: wwwroot\App_Data\jobs\{triggered/continuous}\{jobname}
+[source](https://stackoverflow.com/questions/24903168/azure-webjobs-size-limit)
+
+### .NET Core
+* To exlude 
+    * <DefaultItemExcludes>$(DefaultItemExcludes);App_Data\**\*</DefaultItemExcludes>
+* To exclude from compile
+    *  <Compile Remove="wwwroot\**" /> [source](http://dan.clarke.name/2017/02/including-excluding-files-from-build-with-vs2017-and-net-core/)
+* Copy subdirectories(including .cs)
+```msbuild
+<ItemGroup>
+   <Content Include=".\App_Data\**">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>  
+</ItemGroup>
+```
+
+### Appservice/Web jobs advanced debugging
+* [source](https://blogs.msdn.microsoft.com/waws/2016/02/01/troubleshooting-a-hung-or-long-running-webjob/)
+
+[WebJobLogs](https://blog.kloud.com.au/2016/03/14/azure-webjob-logs-demystified/)
+
+
+### Powershell - Script path.
+$ScriptDir = Split-Path -parent $MyInvocation.MyCommand.Path
+
+### .NET Core Generic host
+[here](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-2.2)
