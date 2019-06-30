@@ -40,3 +40,10 @@
   command: !name2ee <dllname>.dll <statictype> ; !dumpclass <EEClass>
   url: https://winterdom.com/2009/05/05/dumping-static-fields-with-windbg
   
+-
+  name: breakpoint.net
+  command: !bpmd mscorlib.dll System.Threading.Thread..ctor
+  url: https://blogs.msdn.microsoft.com/tess/2008/04/28/setting-breakpoints-in-net-code-using-bpmd/
+-
+  name: proces.id
+  command: "|*"
