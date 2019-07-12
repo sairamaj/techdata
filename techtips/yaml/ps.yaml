@@ -40,4 +40,8 @@
     command: dec->hex "{0:x}" -f 100 hex->dec "{0:x}" -f 0x16 ; dec->bin [Convert]::ToString(129, 2) ; hex->bin [Convert]::ToString(0x81, 2)
     url: https://soykablog.wordpress.com/2012/08/22/three-ways-to-convert-decimal-to-hex-in-powershell/
 
- 
+-
+    name: split.file
+    command: split
+    url: https://gist.github.com/jehugaleahsa/e23d90f65f378aff9aa254e774b40bc7 
+
