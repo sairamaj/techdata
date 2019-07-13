@@ -1,5 +1,5 @@
 ### Get Api routes from directory
-#### todo: need to look when no route attributes pick default controllers and http verbs
+#### todo: need to look when no route attributes pick default controllers and http verbsclc
 ```powershell
 param(
     $Path

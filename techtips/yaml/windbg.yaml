@@ -47,3 +47,23 @@
 -
   name: proces.id
   command: "|*"
+-
+  name: dump.sqlconnections
+  command: mex.sqlcn
+  url: https://blogs.msdn.microsoft.com/benjaminperkins/2017/12/21/must-use-must-know-windbg-commands-my-most-used/
+-
+  name: dump.aspxpages
+  command: !aspxpagesext -n -a -nq -m -t 
+  url: https://blogs.msdn.microsoft.com/benjaminperkins/2017/12/21/must-use-must-know-windbg-commands-my-most-used/
+-
+  name: dump.computername
+  command: !mex.cn
+  url: https://blogs.msdn.microsoft.com/benjaminperkins/2017/12/21/must-use-must-know-windbg-commands-my-most-used/
+-
+  name: dump.uniquethreads
+  command: !mex.us
+  url: https://blogs.msdn.microsoft.com/benjaminperkins/2017/12/21/must-use-must-know-windbg-commands-my-most-used/
+-
+  name: save.modules
+  command: !mex.writemodule
+  url: https://blogs.msdn.microsoft.com/benjaminperkins/2017/12/21/must-use-must-know-windbg-commands-my-most-used/
