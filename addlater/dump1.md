@@ -1,0 +1,1 @@
+[Cooke vs TokenBased](https://dzone.com/articles/cookies-vs-tokens-the-definitive-guide)

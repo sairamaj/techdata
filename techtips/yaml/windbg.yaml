@@ -31,18 +31,18 @@
   url: https://bret.codes/net-core-and-windbg/
 -
   name: cpu
-  command: !threadpool
+  command: "!threadpool"
 -
   name: mex.commands
   command: .cordll -ve -u -l ; !fems tid -stat ; !lt
 -
   name: static.variables
-  command: !name2ee <dllname>.dll <statictype> ; !dumpclass <EEClass>
+  command: "!name2ee <dllname>.dll <statictype> ; !dumpclass <EEClass>"
   url: https://winterdom.com/2009/05/05/dumping-static-fields-with-windbg
   
 -
   name: breakpoint.net
-  command: !bpmd mscorlib.dll System.Threading.Thread..ctor
+  command: "!bpmd mscorlib.dll System.Threading.Thread..ctor"
   url: https://blogs.msdn.microsoft.com/tess/2008/04/28/setting-breakpoints-in-net-code-using-bpmd/
 -
   name: proces.id
@@ -53,17 +53,17 @@
   url: https://blogs.msdn.microsoft.com/benjaminperkins/2017/12/21/must-use-must-know-windbg-commands-my-most-used/
 -
   name: dump.aspxpages
-  command: !aspxpagesext -n -a -nq -m -t 
+  command: "!aspxpagesext -n -a -nq -m -t "
   url: https://blogs.msdn.microsoft.com/benjaminperkins/2017/12/21/must-use-must-know-windbg-commands-my-most-used/
 -
   name: dump.computername
-  command: !mex.cn
+  command: "!mex.cn"
   url: https://blogs.msdn.microsoft.com/benjaminperkins/2017/12/21/must-use-must-know-windbg-commands-my-most-used/
 -
   name: dump.uniquethreads
-  command: !mex.us
+  command: "!mex.us"
   url: https://blogs.msdn.microsoft.com/benjaminperkins/2017/12/21/must-use-must-know-windbg-commands-my-most-used/
 -
   name: save.modules
-  command: !mex.writemodule
+  command: "!mex.writemodule"
   url: https://blogs.msdn.microsoft.com/benjaminperkins/2017/12/21/must-use-must-know-windbg-commands-my-most-used/
