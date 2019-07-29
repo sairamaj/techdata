@@ -67,3 +67,7 @@
   name: save.modules
   command: "!mex.writemodule"
   url: https://blogs.msdn.microsoft.com/benjaminperkins/2017/12/21/must-use-must-know-windbg-commands-my-most-used/
+-
+  name: view.largeheap
+  command: "!eeheap -gc; !dumpheap <largeheapsegment>"
+  url: https://vimvq1987.com/exploring-large-object-heap-windbg/
