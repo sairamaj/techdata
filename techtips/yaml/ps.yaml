@@ -47,5 +47,10 @@
     name: check.type
     command: $val -eq [string]
     url: https://techibee.com/uncategorized/c-typeof-equivalent-in-powershell/2690
+-
+    name: catch.specificexception
+    command: catch [exceptionType]
+
+
 
 
