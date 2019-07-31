@@ -26,3 +26,7 @@
   name: rdp.auto
   command: cmdkey /generic:computername /user:user /password:password; mstsc /v:computername
   descriptoin: Automate the RDP.
+-
+  name: schedule.task
+  command: schtasks /create /SC hourly /TN FriendlyName /TR batch/exe
+  descriptoin: Schedule task.
