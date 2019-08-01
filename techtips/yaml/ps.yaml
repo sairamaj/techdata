@@ -50,7 +50,25 @@
 -
     name: catch.specificexception
     command: catch [exceptionType]
-
-
-
-
+-
+    name: create.object.from.hashtable
+    command: $setting = [pscustomobject]@{id=1; log="l"}
+-
+    name: list.parameters
+    command: foreach($p in $PsBoundParameters.Keys){
+                if( $p -like '*Secret*'){
+                    Write-Host $p (New-Object System.String('*', $PsBoundParameters[$p].Length))
+                }else{
+                    Write-Host $p $PsBoundParameters[$p]
+                }
+            }
+-
+    name: write.object.to.string
+    command: Write-Host ($Object | Format-List | Out-String)
+-
+    name: calculated.property
+    command: $x | select-object -Property @{Name="foo"; Expression={$_.Name.SubString('startinstring')}}
+-
+    name: test.rm.connectivity
+    command: Test-WSMan -ComputerName servernamehere
+    

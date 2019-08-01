@@ -174,24 +174,9 @@ problem: /signin-oidc and 404 when integrating Azure Open Id
 solution: app.UseAuthentication()
 
 
-# Write-Host in powershell with objects
-```powershell
-    Write-Host ($Object | Format-List | Out-String)
-```
-
-# Calculated property
-```powershell
-$x | select-object -Property @{Name="foo"; Expression={$_.Name.SubString('startinstring')}}
-```
-
 ### User account and computer account.
 https://www.sqa.org.uk/e-learning/NetServerOS02CD/page_07.htm
 
-### WIN RM issues
-* Check win rm connectivity 
-```powershell
-    Test-WSMan -ComputerName watserver1
-```
 
 * Check Authentication
 ```powershell
@@ -277,25 +262,6 @@ system.runtime.interopservices.marshal]::PtrToStringAuto($y)
 ```csharp
 IHostingEnvironment hostingEnvironment
 ```
-### Create custom objects in powershell
-```powershell
-$Settings = [PSCustomObject]@{
-		Id = ''
-		LogFile = ''
-	}
-```
-
-### List all powershell parmeters
-```powershell
-foreach($p in $PsBoundParameters.Keys){
-    if( $p -like '*Secret*'){
-        Write-Host $p (New-Object System.String('*', $PsBoundParameters[$p].Length))
-    }else{
-        Write-Host $p $PsBoundParameters[$p]
-    }
-}
-```
-
 ### Asp.net core file logging
 [source](https://nblumhardt.com/2016/10/aspnet-core-file-logger/)
 
