@@ -56,12 +56,12 @@
 -
     name: list.parameters
     command: foreach($p in $PsBoundParameters.Keys){
-                if( $p -like '*Secret*'){
-                    Write-Host $p (New-Object System.String('*', $PsBoundParameters[$p].Length))
-                }else{
-                    Write-Host $p $PsBoundParameters[$p]
-                }
-            }
+                    if( $p -like '*Secret*'){
+                        Write-Host $p (New-Object System.String('*', $PsBoundParameters[$p].Length))
+                    }else{
+                        Write-Host $p $PsBoundParameters[$p]
+                    }
+                    }
 -
     name: write.object.to.string
     command: Write-Host ($Object | Format-List | Out-String)
@@ -71,4 +71,3 @@
 -
     name: test.rm.connectivity
     command: Test-WSMan -ComputerName servernamehere
-    
