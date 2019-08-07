@@ -29,3 +29,8 @@
     name: task.return.completion
     description: Task.CompletedTask and Task.FromResult(ret)
     url: https://odetocode.com/blogs/scott/archive/2018/01/18/task-completedtask-and-task-result-tips.aspx
+-
+    name: generate.csharp.json
+    description: Generates csharp types from json
+    url: http://json2csharp.com/
+

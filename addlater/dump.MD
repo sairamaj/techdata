@@ -80,9 +80,10 @@ this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ServerRunOutput
 ###RDP debugging
  - Boot screen
  [serialconsole](https://cloudopszone.com/azure-serial-console/)
+ [ms serialconsole](https://docs.microsoft.com/en-us/azure/virtual-machines/troubleshooting/serial-console-windows)
              ( to enable run command-> Enable EMS-> Run and then restart VM)
    - cmd
-   - Esc + Tab ( ch si 1)
+   - Esc + Tab ( ch -si 1)
    - Enter credentials
    - powershell
    - Get-service | where name -like '*Remote*'
