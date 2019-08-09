@@ -298,3 +298,10 @@ $ScriptDir = Split-Path -parent $MyInvocation.MyCommand.Path
 
 ### .NET Core Generic host
 [here](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-2.2)
+
+### VM debugging
+* Add public IP to VM
+* Eable RDP port in NSG
+[nsglevel](https://docs.microsoft.com/en-us/azure/virtual-machines/troubleshooting/troubleshoot-rdp-nsg-problem)
+[sourcelevel](https://docs.microsoft.com/en-us/azure/virtual-machines/troubleshooting/troubleshoot-rdp-general-error)
+[serial_console_problem](https://github.com/microsoft/azserialconsole/blob/master/Known_Issues/Windows_Health_Info.md)
