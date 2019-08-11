@@ -71,3 +71,6 @@
 -
     name: test.rm.connectivity
     command: Test-WSMan -ComputerName servernamehere
+-
+    name: module.source.path
+    command: (Get-Module PSDesiredStateConfiguration -ListAvailable).ModuleBase

@@ -305,3 +305,10 @@ $ScriptDir = Split-Path -parent $MyInvocation.MyCommand.Path
 [nsglevel](https://docs.microsoft.com/en-us/azure/virtual-machines/troubleshooting/troubleshoot-rdp-nsg-problem)
 [sourcelevel](https://docs.microsoft.com/en-us/azure/virtual-machines/troubleshooting/troubleshoot-rdp-general-error)
 [serial_console_problem](https://github.com/microsoft/azserialconsole/blob/master/Known_Issues/Windows_Health_Info.md)
+
+
+### Azure Logs (extension including DSC)
+C:\WindowsAzure\Logs\Plugins
+
+### Azure extension scripts
+c:\packages\plugins...
