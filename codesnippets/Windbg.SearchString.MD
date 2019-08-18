@@ -1,0 +1,10 @@
+```cmd
+.block
+{
+	.foreach( address { s -[1]u 00000000 L?ffffffff "DataToSearchHere" } )
+	{
+		dt wchar_t[1000] ${address} 
+		.printf "\n"
+	}
+}
+```

@@ -2,3 +2,8 @@
     name: app.create
     description: creates react app with no build configuration
     url: https://github.com/facebook/create-react-app
+-
+    name: processing.pipeline
+    description: RX, TPL
+    url: https://jack-vanlightly.com/blog/2018/4/17/processing-pipelines-series-introduction
+    
