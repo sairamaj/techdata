@@ -63,12 +63,15 @@
     command: git show-branch
     description: one way to find out the parent of branch
 -
-	name: remove.untrackedfiles
-	command: git rm -fd
-	description: Removes untracked files
-
+    name: remove.untrackedfiles
+    command: git rm -fd
+    description: Removes untracked files
 -
     name: checkout.singlefile.specificversion
     command: git checkout 3856a9642db7f8 filehere
     description: get specific file from given changeset
+-
+    name: revert.commit
+    command: git revert commitid
+    description: reverts to the specific commit
 

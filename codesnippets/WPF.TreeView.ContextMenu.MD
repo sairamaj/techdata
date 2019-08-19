@@ -1,4 +1,11 @@
 ```xml
+ 	<UserControl.Resources>
+		<Style TargetType="TreeViewItem">
+			<Setter Property="IsExpanded" Value="{Binding IsExpanded ,Mode=TwoWay}" />
+			<Setter Property="IsSelected" Value="{Binding IsSelected ,Mode=TwoWay}" />
+		</Style>
+
+ </UserControl.Resources>
  <TreeView ItemsSource="{Binding RootConfigurations}">
             <TreeView.Resources>
 
