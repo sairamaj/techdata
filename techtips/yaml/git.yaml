@@ -72,6 +72,6 @@
     description: get specific file from given changeset
 -
     name: revert.commit
-    command: git revert commitid
-    description: reverts to the specific commit
+    command: git revert unwanted_commitid
+    description: reverts to the specific commit (Note the commiet id you give is which you don't want to be included in the code )
 
