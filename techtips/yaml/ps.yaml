@@ -16,7 +16,7 @@
     description: Add startup commands whenever you launch default powershell
 -
     name: script.startuppath
-    command: $PSScriptRoot
+    command: $PSScriptRoot or $ScriptPath = split-path -parent $MyInvocation.MyCommand.Definition
     description: Use this to get current directory in powershell script.startuppath
 -
     name: copy.files

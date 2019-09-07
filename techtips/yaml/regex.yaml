@@ -2,3 +2,7 @@
     name: pattern.extract.field
     command: new Regex("^Task(?<name>\\w+)UserView$"); matches.Groups["name"]
     description: Extracts name from ex, TaskTestUserView
+- 
+    name: pattern.dns.example
+    command: ^[a-z][a-z0-9-]{1,61}[a-z0-9]$
+    description: Here name should start(^) with letter and can end with ($) with letter or number
