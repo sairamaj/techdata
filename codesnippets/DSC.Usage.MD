@@ -26,3 +26,29 @@ Configuration SmtpFeatureTest
 
 ## Apply
 * Start-DscConfiguration -Path C:\tools\dsctest\SmtpFeatureTest -Verbose -Wait
+
+### Running a PS script
+```powershell
+Configuration SetScript
+{
+    Import-DscResource -ModuleName PSDesiredStateConfiguration
+    Node localhost
+    {
+
+        Script TestPS
+        {
+			GetScript = { #Do Nothing
+			}
+
+			SetScript = {
+                Push-Location "C:\temp\"
+				.\HelloWorld.ps1
+			}
+
+			TestScript = {
+				return $false
+			}
+        }
+    }
+}
+```
