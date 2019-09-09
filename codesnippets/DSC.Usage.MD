@@ -52,3 +52,13 @@ Configuration SetScript
     }
 }
 ```
+
+### Running existing DSC scripts
+```powershell
+    Start-DscConfiguration –UseExisting –Verbose –Wait
+```
+### Invoking Resource Directly
+[Invoke-DscResource](https://devblogs.microsoft.com/powershell/invoking-powershell-dsc-resources-directly/)
+
+### Debug DSC
+[Enable-DscDebug](https://docs.microsoft.com/en-us/powershell/dsc/troubleshooting/debugresource)
