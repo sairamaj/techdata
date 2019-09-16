@@ -1,0 +1,4 @@
+- 
+    name: aspnet.external.link.from.model
+    command: <a href="@Model.Link">Link Text here</a>
+    description: External link

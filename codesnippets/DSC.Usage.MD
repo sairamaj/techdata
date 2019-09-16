@@ -62,3 +62,7 @@ Configuration SetScript
 
 ### Debug DSC
 [Enable-DscDebug](https://docs.microsoft.com/en-us/powershell/dsc/troubleshooting/debugresource)
+
+
+### Azure DSC Logs
+C:\WindowsAzure\Logs\Plugins\Microsoft.Powershell.DSC\2.26.1.0
