@@ -37,6 +37,17 @@ namespace SimpleParserTest
             parseWithoutMethodName.Should().Throw<DslParserException>().WithMessage("Method name missing.");
         }
 
+        [Test(Description = "Successful parsing ${add(num1=var.test)")]
+        public void SuccessParseWithVariables()
+        {
+            var methodInfo = SimpleParser.Parser.Parse("${add(num1=var.test)");
+            methodInfo.Name.Should().Be("add");
+            methodInfo.Parameters.Should().BeEquivalentTo(new Dictionary<string, string>()
+            {
+                {"num1","var.test" }
+            });
+        }
+
         //[Test(Description = "Missing method name ${(num1=10)")]
         //public void MethodNameMissingContainingArguments()
         //{

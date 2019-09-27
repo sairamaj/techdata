@@ -19,7 +19,7 @@ namespace SimpleParser.SlowAndSimple
             _tokenDefinitions.Add(new TokenDefinition(TokenType.OpenParenthesis, "^\\("));
             _tokenDefinitions.Add(new TokenDefinition(TokenType.CloseParenthesis, "^\\)"));
             _tokenDefinitions.Add(new TokenDefinition(TokenType.RightFlowerBracket, "^}"));
-            _tokenDefinitions.Add(new TokenDefinition(TokenType.StringValue, "^\\w+=?\\w+"));
+            _tokenDefinitions.Add(new TokenDefinition(TokenType.StringValue, "^\\w+=?(var)*\\.?\\w+"));
             _tokenDefinitions.Add(new TokenDefinition(TokenType.Comma, "^,"));
         }
 

@@ -1,4 +1,5 @@
-﻿using SimpleParser.SlowAndSimple;
+﻿using System;
+using SimpleParser.SlowAndSimple;
 
 namespace SimpleParser
 {
@@ -8,6 +9,10 @@ namespace SimpleParser
         {
             var tokenizer = new SimpleRegexTokenizer();
             var tokens = tokenizer.Tokenize(expression);
+            foreach (var token in tokens)
+            {
+                Console.WriteLine($"{token.TokenType}:{token.Value}");
+            }
             return new MethodInfo(tokens);
         }
     }
