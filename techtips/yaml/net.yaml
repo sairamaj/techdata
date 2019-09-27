@@ -33,4 +33,8 @@
     name: generate.csharp.json
     description: Generates csharp types from json
     url: http://json2csharp.com/
+-
+    name: random.net.different.values
+    description: Use the same instance multiple times instead of different instances
+    
 
