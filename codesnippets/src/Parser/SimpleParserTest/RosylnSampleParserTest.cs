@@ -46,10 +46,21 @@ namespace SimpleParserTest
                 });
         }
 
-        public void VariableTest()
+        [Test(Description = "Test add(10,20)")]
+        public void SuccessfulParserWithNamedArgumentsTest()
         {
-            var method = SimpleParser.RosylnSample.Parser.Parse("var.input");
+            var method = SimpleParser.RosylnSample.Parser.Parse("add(num1=10,num2=20)");
             Console.WriteLine(method);
+            method.Name.Should().Be("add");
+            method.Arguments.Should().BeEquivalentTo(
+                new Argument("num1", "10", 1)
+                {
+                    IsVariable = false
+                },
+                new Argument("num2", "20", 2)
+                {
+                    IsVariable = false
+                });
         }
     }
 }

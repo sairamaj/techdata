@@ -65,7 +65,22 @@ namespace SimpleParser.RosylnSample
                 }
 
                 _currentArgumentCount++;
-                _methodData2.AddParameter($"arg{_currentArgumentCount}", node.GetText().ToString(), _currentArgumentCount);
+                var val = node.GetText()?.ToString();
+                var parts = val.Split('=');
+                var argName = string.Empty;
+                var argData = string.Empty;
+                if (parts.Length > 1)
+                {
+                    argName = parts[0];
+                    argData = parts[1];
+                }
+                else
+                {
+                    argName = $"arg{_currentArgumentCount}";
+                    argData = val;
+                }
+
+                _methodData2.AddParameter(argName, argData, _currentArgumentCount);
                 base.VisitArgument(node);
             }
         }
