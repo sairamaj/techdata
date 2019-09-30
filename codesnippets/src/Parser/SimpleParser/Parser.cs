@@ -1,11 +1,12 @@
 ﻿using System;
+using SimpleParser.Model;
 using SimpleParser.SlowAndSimple;
 
 namespace SimpleParser
 {
     public class Parser
     {
-        public static MethodInfo Parse(string expression)
+        public static MethodData Parse(string expression)
         {
             var tokenizer = new SimpleRegexTokenizer();
             var tokens = tokenizer.Tokenize(expression);
@@ -13,7 +14,8 @@ namespace SimpleParser
             {
                 Console.WriteLine($"{token.TokenType}:{token.Value}");
             }
-            return new MethodInfo(tokens);
+
+            return MethodExtract.Parse(tokens);
         }
     }
 }

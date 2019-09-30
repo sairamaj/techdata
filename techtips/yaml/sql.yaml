@@ -2,3 +2,7 @@
     name: convert.from.binary.to.varchar
     command: convert(varbinary(4000),binaryvalue,2)
     url: https://docs.microsoft.com/en-us/sql/t-sql/data-types/binary-and-varbinary-transact-sql?view=sql-server-2017
+- 
+    name: sql.sleep
+    command: waitfor delay '00:00:30'
+    url: 

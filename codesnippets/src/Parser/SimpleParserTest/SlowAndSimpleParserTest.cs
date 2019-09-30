@@ -7,7 +7,7 @@ using SimpleParser.Exceptions;
 namespace SimpleParserTest
 {
     [TestFixture]
-    public class ParserTest
+    public class SlowAndSimpleParserTest
     {
         [Test(Description = "Successful parsing ${add(num1=10,num=20,num3=30)")]
         public void SuccessfulParser()
