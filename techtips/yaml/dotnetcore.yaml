@@ -20,3 +20,7 @@
   name: devops.build.fromgithub.changeproject
   descrption: In Build step unlink and change the project filter
   url: https://blog.sentry.io/2018/10/30/configuring-build-pipeline-azure-devops-asp-dotnet-core-api
+-
+  name: aspnetcore.error.noserver.certificate.specified
+  command: dotnet dev-certs https --clean ; dotnet dev-certs https -t
+  url: https://stackoverflow.com/questions/53300480/unable-to-configure-https-endpoint-no-server-certificate-was-specified-and-the

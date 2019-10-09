@@ -5,4 +5,6 @@
 - 
     name: sql.sleep
     command: waitfor delay '00:00:30'
-    url: 
+- 
+    name: dacpac.run
+    command: sqlpackage.exe /Action:Publish /SourceFile:"custom.dacpac" /TargetDatabaseName:DbName /TargetServerName:servername /Variables:param1=val1
