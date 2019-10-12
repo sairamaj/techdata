@@ -8,3 +8,6 @@
 - 
     name: dacpac.run
     command: sqlpackage.exe /Action:Publish /SourceFile:"custom.dacpac" /TargetDatabaseName:DbName /TargetServerName:servername /Variables:param1=val1
+- 
+    name: drop.database.with.force
+    command: USE master; ALTER DATABASE dbhere SET SINGLE_USER WITH ROLLBACK IMMEDIATE; DROP DATABASE dbhere

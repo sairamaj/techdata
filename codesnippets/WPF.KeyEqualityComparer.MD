@@ -1,4 +1,5 @@
 ### KeyEqualityComparer used for Distinct
+[source](https://github.com/jehugaleahsa/ComparerExtensions/blob/master/ComparerExtensions/KeyEqualityComparer.cs)
 ```csharp
 	public class KeyEqualityComparer<T> : IEqualityComparer<T>
 	{
