@@ -6,7 +6,7 @@
 
 #### powershell to read p7b
 ```powershell
-[reflection.assembly]::LoadWithPartialName("System.SecurC:\Temp>"C:\Program Files\git\mingw64\bin\openssl" pkcs12 -in certificate-vault1234-dcdevtestbc6b5602-a2bf-4666-b738-0be636fa3a6d-20191011.pfx -out new.perm -nodesity")
+[reflection.assembly]::LoadWithPartialName("System.Security")
 $data = [System.IO.File]::ReadAllBytes("certificates.p7b")
 $cms = new-object system.security.cryptography.pkcs.signedcms
 $cms.Decode($data)
