@@ -74,3 +74,7 @@
 -
     name: module.source.path
     command: (Get-Module PSDesiredStateConfiguration -ListAvailable).ModuleBase
+-
+    name: run.external.wait.exitcode
+    command: $p = Start-Process -FilePath "dotnet" -ArgumentList "run --project $Project $Arguments" -NoNewWindow -Wait -PassThru
+    description: Exit code can be used with $p.ExitCode
