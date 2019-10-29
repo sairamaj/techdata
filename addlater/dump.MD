@@ -2,7 +2,7 @@
 ```powershell
 try{
 
-    Add-LocalGroupMember -Group "Performance Log Users" -Member "PQA\FiservService"  -ErrorAction Stop
+    Add-LocalGroupMember -Group "Performance Log Users" -Member "PQA\UserHere"  -ErrorAction Stop
 }catch [Microsoft.PowerShell.Commands.MemberExistsException] {
     Write-Warning "$member already in $group"
 }
