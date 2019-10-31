@@ -6,4 +6,7 @@
     name: processing.pipeline
     description: RX, TPL
     url: https://jack-vanlightly.com/blog/2018/4/17/processing-pipelines-series-introduction
-    
+-
+    name: web.debug
+    description: To debug use developer tools network and console
+

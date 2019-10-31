@@ -9,7 +9,7 @@
   description: Defines the skelton of a algorithm in a method, deferring some steps to subclasses.
                Template method let redifne certain steps of an algorithm without changing the algorithm structure
 -
-  name: holywood principle
+  name: holywood.principle
   description: don't call us , we will call you
       
 - 

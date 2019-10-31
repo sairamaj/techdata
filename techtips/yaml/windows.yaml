@@ -21,12 +21,12 @@
 -
   name: etw.trace.detail
   command: logman name -ets
-  descriptoin: shows the details of the session.
+  description: shows the details of the session.
 -
   name: rdp.auto
   command: cmdkey /generic:computername /user:user /password:password; mstsc /v:computername
-  descriptoin: Automate the RDP.
+  description: Automate the RDP.
 -
   name: schedule.task
   command: schtasks /create /SC hourly /TN FriendlyName /TR batch/exe
-  descriptoin: Schedule task.
+  description: Schedule task.

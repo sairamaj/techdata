@@ -32,7 +32,7 @@
              <Button FontFamily="Marlett" FontSize="20" Content="6"/>
     description: Displays up and down arrow.
 -
-    name: Marlett Characters
+    name: Marlett.Characters
     url: https://reactos.org/wiki/Marlett_Characters
 -
     name: button.flat

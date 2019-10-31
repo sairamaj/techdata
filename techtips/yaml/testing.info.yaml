@@ -8,4 +8,4 @@
                 source -> http://www.softwaretestingtricks.com/2007/01/unit-testing-versus-functional-tests.html
 - 
     name: rhinomocks.internal.visible
-    description: [assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
+    description: assembly InternalsVisibleTo("DynamicProxyGenAssembly2")

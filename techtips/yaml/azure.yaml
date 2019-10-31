@@ -54,3 +54,7 @@
 -
     name: keyvault.get.secret.ps
     description: (Get-AzureKeyVaultSecret -VaultName saitestkv1 -Name db).SecretValueText
+-
+    name: functions.cors.issue
+    description: Clear all other CORS and use only '*'
+    url: https://blogs.msdn.microsoft.com/benjaminperkins/2017/04/12/azure-functions-access-control-allow-credentials-with-cors/

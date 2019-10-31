@@ -18,7 +18,7 @@
   url: https://github.com/natemcmaster/dotnet-tools
 -
   name: devops.build.fromgithub.changeproject
-  descrption: In Build step unlink and change the project filter
+  description: In Build step unlink and change the project filter
   url: https://blog.sentry.io/2018/10/30/configuring-build-pipeline-azure-devops-asp-dotnet-core-api
 -
   name: aspnetcore.error.noserver.certificate.specified
