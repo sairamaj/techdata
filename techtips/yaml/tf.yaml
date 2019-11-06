@@ -1,0 +1,7 @@
+- 
+    name: conditional.execute
+    command: count = var.octopus-deploy ? 1 <colon> 0
+    url: https://docs.microsoft.com/en-us/sql/t-sql/data-types/binary-and-varbinary-transact-sql?view=sql-server-2017
+- 
+    name: always.run
+    command:  triggers ={              random_number = "${timestamp()}"                    }

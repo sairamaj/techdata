@@ -64,7 +64,7 @@
     description: one way to find out the parent of branch
 -
     name: remove.untrackedfiles
-    command: git rm -fd
+    command: git clean -fd
     description: Removes untracked files
 -
     name: checkout.singlefile.specificversion

@@ -66,3 +66,5 @@ Configuration SetScript
 
 ### Azure DSC Logs
 C:\WindowsAzure\Logs\Plugins\Microsoft.Powershell.DSC\2.26.1.0
+
+[Azure VM DSC](https://devblogs.microsoft.com/powershell/introducing-the-azure-powershell-dsc-desired-state-configuration-extension/)

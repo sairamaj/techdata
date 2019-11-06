@@ -78,3 +78,11 @@
     name: run.external.wait.exitcode
     command: $p = Start-Process -FilePath "dotnet" -ArgumentList "run --project $Project $Arguments" -NoNewWindow -Wait -PassThru
     description: Exit code can be used with $p.ExitCode
+-
+    name: valuefrom.pipeline.process
+    command: Wrap in process block
+    url: https://stackoverflow.com/questions/14244910/script-only-seems-to-process-the-last-object-from-the-pipeline
+-
+    name: ps.cheatshet
+    command: Useful cheatshet.
+    url: https://gist.github.com/ab14jain/dd62f0c8884b82d3fa6031ad6684a629

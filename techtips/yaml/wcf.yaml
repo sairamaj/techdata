@@ -1,0 +1,5 @@
+- 
+    name: wcf.ntml.error.onsamebox
+    command: error: The HTTP request is unauthorized with client authentication scheme 'Ntlm'. The authentication header received from the server was 'Negotiate,NTLM"'
+    description: Disable loop back as suggested in the article
+    url: https://blogs.msdn.microsoft.com/distributedservices/2009/11/10/wcf-calling-wcf-service-hosted-in-iis-on-the-same-machine-as-client-throws-authentication-error/
