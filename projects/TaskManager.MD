@@ -8,7 +8,7 @@
     * WPF
 ### ScreenShot
 
-![screenshot](https://github.com/sairamaj/taskmanager/blob/master/doc/images/taskmanager.png)
+![image](https://github.com/sairamaj/taskmanager/blob/master/doc/images/taskmanager.png)
 
 
 [source](http://github.com/sairamaj/taskmanager)
