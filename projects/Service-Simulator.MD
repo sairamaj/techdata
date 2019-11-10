@@ -1,4 +1,3 @@
-## Service Simulator
 ### What
     
 A Generic purpose http __soap__ or __rest__ simulator     
@@ -11,7 +10,7 @@ A Generic purpose http __soap__ or __rest__ simulator
 * JavaScript
 
 ### ScreenShot
-![image](https://github.com/sairamaj/service-simulator/blob/master/doc/images/summary.png)
+![img](https://github.com/sairamaj/service-simulator/blob/master/doc/images/summary.png)
     
 
 [source](http://github.com/sairamaj/service-simulator)

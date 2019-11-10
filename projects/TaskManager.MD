@@ -1,4 +1,3 @@
-## TaskManager
 ### What
     A Generic WPF UI Shell application to host a generic tasks.
 ### Why
