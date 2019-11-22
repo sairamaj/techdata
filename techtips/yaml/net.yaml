@@ -41,4 +41,8 @@
     description: EmployeeCollection.GroupBy(x => new{x.fName, x.lName}).Select(g => g.First());
     url: https://stackoverflow.com/questions/16983618/how-to-remove-duplicates-from-collection-using-iequalitycomparer-linq-distinct
     
+-
+    name: svcutil.tls.12
+    description: <AppContextSwitchOverrides value="Switch.System.Net.DontEnableSystemDefaultTlsVersions=false"/>
+    url: https://kevinchalet.com/2019/04/11/forcing-an-old-net-application-to-support-tls-1-2-without-recompiling-it/
 

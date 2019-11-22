@@ -24,3 +24,43 @@
 				</Style>
 			</ListView.ItemContainerStyle>
 ```
+
+### Multi style.
+```xml
+            <ListView.ItemContainerStyle>
+                <Style TargetType="{x:Type ListViewItem}">
+                    <Style.Triggers>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Prop1}" Value="Yes" />
+                                <Condition Binding="{Binding Prop2}" Value="Yes" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="ListViewItem.Foreground" Value="DarkGreen" />
+                            <Setter Property="ListViewItem.FontWeight" Value="Bold" />
+                        </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Prop1}" Value="Yes" />
+                                <Condition Binding="{Binding Prop2}" Value="No" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="ListViewItem.Foreground" Value="Green" />
+                        </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Prop1}" Value="No" />
+                                <Condition Binding="{Binding Prop2}" Value="Yes" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="ListViewItem.Foreground" Value="LightCoral" />
+                        </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Prop1}" Value="No" />
+                                <Condition Binding="{Binding Prop2}" Value="No" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="ListViewItem.Foreground" Value="Red" />
+                        </MultiDataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.ItemContainerStyle>
+
+```
