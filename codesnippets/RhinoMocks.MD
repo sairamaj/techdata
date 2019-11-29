@@ -9,3 +9,9 @@ userRepository.Stub(r => r.Save(ref Arg<User>.Ref(constraint: Rhino.Mocks.Constr
     obj.Stub( o=> o.DoSomething(val1)).Return(outval1).Repeat.Once();
     obj.Stub( o=> o.DoSomething(val2).Return(outval2).Repeat.Once();
 ```
+
+### InternalsVisbleTo
+```csharp
+[assembly: InternalsVisibleTo("UnitTestDllName")]
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
+```

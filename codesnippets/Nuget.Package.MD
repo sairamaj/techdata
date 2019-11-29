@@ -17,3 +17,13 @@
 ```
 nuget pack 
 nuget push foo.nupkg -source <uri> -apikey <apikey>
+
+``` Adding extra files through Csrpoj
+ <ItemGroup>
+    <Content Include="App.config">
+      <Pack>true</Pack>
+      <PackagePath>lib\net462\Console.exe.config</PackagePath>
+    </Content>
+  </ItemGroup>
+```
+[source](https://developercommunity.visualstudio.com/content/problem/37360/nuget-pack-does-not-include-execonfig-for-tools-pr.html)

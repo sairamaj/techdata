@@ -45,4 +45,8 @@
     name: svcutil.tls.12
     description: <AppContextSwitchOverrides value="Switch.System.Net.DontEnableSystemDefaultTlsVersions=false"/>
     url: https://kevinchalet.com/2019/04/11/forcing-an-old-net-application-to-support-tls-1-2-without-recompiling-it/
+-
+    name: generic.compare
+    description: Comparer<T> Create()
+    url: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.comparer-1.create?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Generic_Comparer_1_Create_System_Comparison__0__
 
