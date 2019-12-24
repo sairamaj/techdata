@@ -37,5 +37,8 @@
 -
     name: button.flat
     command: <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="{Binding Text}" Command="           {Binding SortCommand}"/>
+-
+    name: control.scroll
+    command: <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">; Control may need Height property.
 
 
