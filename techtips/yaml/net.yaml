@@ -50,3 +50,7 @@
     description: Comparer<T> Create()
     url: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.comparer-1.create?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Generic_Comparer_1_Create_System_Comparison__0__
 
+-
+    name: json.enum.serializtion
+    description: [JsonConverter(typeof(StringEnumConverter))]
+
