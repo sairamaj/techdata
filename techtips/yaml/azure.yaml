@@ -62,3 +62,14 @@
     name: az.ad.sp
     command: az ad sp create-for-rbac; az role assignment list --assignee appidhre;az role assignment create --assignee appidhere --role Contributor;az role assignment list --assignee appidhre
     description: create and give Contributor
+-
+  name: managed.service.identity
+  description: Your code needs credentials to authenticate to cloud services, `
+               but you want to limit the visibility of those credentials as much as possible. `
+               Ideally, they never appear on a developer’s workstation or get checked-in to source control.
+               Azure Key Vault can store credentials securely so they aren’t in your code, but to retrieve them you need to authenticate to Azure Key Vault. To authenticate to Key Vault, you need a credential! A classic bootstrap problem. Through the magic of Azure and Azure AD, MSI provides a “bootstrap identity” that makes it much simpler to get things started.
+  url: https://azure.microsoft.com/en-us/blog/keep-credentials-out-of-code-introducing-azure-ad-managed-service-identity/
+-
+  name: auto.login.to.azure
+  description: Save-AzureRmContext and Import-AzureRmContext
+  url: https://blogs.technet.microsoft.com/389thoughts/2018/02/11/logging-on-to-azure-for-your-everyday-job/
