@@ -86,3 +86,8 @@
     name: ps.cheatshet
     command: Useful cheatshet.
     url: https://gist.github.com/ab14jain/dd62f0c8884b82d3fa6031ad6684a629
+-
+    name: ps.credential.convert
+    command: $p = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($Credentials.Password)
+                  $Password = [system.runtime.interopservices.marshal]::PtrToStringAuto($p)
+

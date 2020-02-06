@@ -11,3 +11,7 @@
 - 
     name: drop.database.with.force
     command: USE master; ALTER DATABASE dbhere SET SINGLE_USER WITH ROLLBACK IMMEDIATE; DROP DATABASE dbhere
+- 
+    name: print.proc.return.sms
+    description: print sql procedure return value in management studio
+    command: declare @result int; execute $result = proc ; select @result

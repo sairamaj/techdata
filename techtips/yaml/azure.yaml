@@ -58,3 +58,7 @@
     name: functions.cors.issue
     description: Clear all other CORS and use only '*'
     url: https://blogs.msdn.microsoft.com/benjaminperkins/2017/04/12/azure-functions-access-control-allow-credentials-with-cors/
+-
+    name: az.ad.sp
+    command: az ad sp create-for-rbac; az role assignment list --assignee appidhre;az role assignment create --assignee appidhere --role Contributor;az role assignment list --assignee appidhre
+    description: create and give Contributor
