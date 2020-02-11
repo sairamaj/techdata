@@ -73,3 +73,6 @@
   name: auto.login.to.azure
   description: Save-AzureRmContext and Import-AzureRmContext
   url: https://blogs.technet.microsoft.com/389thoughts/2018/02/11/logging-on-to-azure-for-your-everyday-job/
+-
+  name: appservice.deployment.target.project
+  description: add .deployment file with config and project 

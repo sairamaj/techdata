@@ -1,0 +1,9 @@
+-
+    name: help.string
+    command: help(method) or method.__doc__
+-
+    name: object.attributes
+    command: obj.__dict__
+-
+    name: clear.screen
+    command: "cls = lambda: print('\n'*100) ; cls()"
