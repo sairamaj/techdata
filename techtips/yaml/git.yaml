@@ -75,3 +75,7 @@
     command: git revert unwanted_commitid
     description: reverts to the specific commit (Note the commiet id you give is which you don't want to be included in the code )
 
+-
+    name: list.conflicts
+    command: git diff --name-only --diff-filter=U
+    description: Lists conflicts

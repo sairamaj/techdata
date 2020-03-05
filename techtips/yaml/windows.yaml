@@ -34,3 +34,7 @@
   name: refresh.envirionment
   command: use refreshenv which is part of choco
   description: To enable environments in current command window (no need to close and reopen cmd)
+-
+  name: set.command.window.title
+  command: title titlehere
+  description: Sets Command window title.
