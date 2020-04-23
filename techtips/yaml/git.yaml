@@ -79,3 +79,7 @@
     name: list.conflicts
     command: git diff --name-only --diff-filter=U
     description: Lists conflicts
+-
+    name: change.permission
+    command: git update-index --chmod=+x terraform-provider-apigee_v0.0.21
+    description: to change the permission of linux file
