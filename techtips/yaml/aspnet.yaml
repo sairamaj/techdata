@@ -2,3 +2,7 @@
     name: aspnet.external.link.from.model
     command: <a href="@Model.Link">Link Text here</a>
     description: External link
+- 
+    name: aspnet.dev.mvc.owin
+    command: https://developer.okta.com/blog/2019/03/13/build-rest-api-with-aspnet-web-api
+    description: Using Owin Startup and other stuff
