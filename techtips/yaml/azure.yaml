@@ -76,3 +76,8 @@
 -
   name: appservice.deployment.target.project
   description: add .deployment file with config and project 
+
+-
+  name: stop.webjob
+  description: To stop web job and also nice resource view
+  url: https://github.com/projectkudu/kudu/wiki/Full-stopping-a-Web-App
