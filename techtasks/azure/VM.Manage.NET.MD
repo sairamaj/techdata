@@ -7,3 +7,11 @@ dotnet add package Microsoft.IdentityModel.Clients.ActiveDirectory --version 5.2
 dotnet add package Microsoft.Azure.Management.Compute.Fluent
 ```
 
+```csharp
+var computeManagementClient = new ComputeManagementClient (this.TokenCredential) {
+            SubscriptionId = this.SubscriptionId
+        };
+
+        await computeManagementClient.VirtualMachines.StartAsync (resourceGroup, vmName);
+        return await GetStatus (resourceGroup, vmName);
+```
