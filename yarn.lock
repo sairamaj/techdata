@@ -316,6 +316,11 @@ ansi-wrap@0.1.0:
   resolved "https://registry.yarnpkg.com/ansi-wrap/-/ansi-wrap-0.1.0.tgz#a82250ddb0015e9a27ca82e82ea603bbfa45efaf"
   integrity sha1-qCJQ3bABXponyoLoLqYDu/pF768=
 
+any-promise@^1.0.0, any-promise@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/any-promise/-/any-promise-1.3.0.tgz#abc6afeedcea52e809cdc0376aed3ce39635d17f"
+  integrity sha1-q8av7tzqUugJzcA3au0845Y10X8=
+
 anymatch@^1.3.0:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-1.3.2.tgz#553dcb8f91e3c889845dfdba34c77721b90b9d7a"
@@ -2638,12 +2643,30 @@ fs-extra@6.0.0:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
+fs-extra@^2.0.0:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-2.1.2.tgz#046c70163cef9aad46b0e4a7fa467fb22d71de35"
+  integrity sha1-BGxwFjzvmq1GsOSn+kZ/si1x3jU=
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^2.1.0"
+
 fs-minipass@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/fs-minipass/-/fs-minipass-1.2.5.tgz#06c277218454ec288df77ada54a03b8702aacb9d"
   integrity sha512-JhBl0skXjUPCFH7x6x61gQxrKyXsxB5gcgePLZCwfyCGGsTISMoIeObbrvVeP6Xmyaudw4TT43qV2Gz+iyd2oQ==
   dependencies:
     minipass "^2.2.1"
+
+fs-promise@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/fs-promise/-/fs-promise-2.0.3.tgz#f64e4f854bcf689aa8bddcba268916db3db46854"
+  integrity sha1-9k5PhUvPaJqovdy6JokW2z20aFQ=
+  dependencies:
+    any-promise "^1.3.0"
+    fs-extra "^2.0.0"
+    mz "^2.6.0"
+    thenify-all "^1.6.0"
 
 fs-write-stream-atomic@^1.0.8:
   version "1.0.10"
@@ -4173,6 +4196,13 @@ jsonfile@2.0.0:
   resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-2.0.0.tgz#c3944f350bd3c078b392e0aa1633b44662fcf06b"
   integrity sha1-w5RPNQvTwHizkuCqFjO0RmL88Gs=
 
+jsonfile@^2.1.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-2.4.0.tgz#3736a2b428b87bbda0cc83b53fa3d633a35c2ae8"
+  integrity sha1-NzaitCi4e72gzIO1P6PWM6NcKug=
+  optionalDependencies:
+    graceful-fs "^4.1.6"
+
 jsonfile@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
@@ -4869,6 +4899,15 @@ multipipe@^0.1.2:
   integrity sha1-Ko8t33Du1WTf8tV/HhoTfZ8FB4s=
   dependencies:
     duplexer2 "0.0.2"
+
+mz@^2.6.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/mz/-/mz-2.7.0.tgz#95008057a56cafadc2bc63dde7f9ff6955948e32"
+  integrity sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==
+  dependencies:
+    any-promise "^1.0.0"
+    object-assign "^4.0.1"
+    thenify-all "^1.0.0"
 
 nan@^2.9.2:
   version "2.11.1"
@@ -6713,6 +6752,20 @@ text-extensions@^1.0.0:
   resolved "https://registry.yarnpkg.com/text-extensions/-/text-extensions-1.9.0.tgz#1853e45fee39c945ce6f6c36b2d659b5aabc2a26"
   integrity sha512-wiBrwC1EhBelW12Zy26JeOUkQ5mRu+5o8rpsJk5+2t+Y5vE7e842qtZDQ2g1NpX/29HdyFeJ4nSIhI47ENSxlQ==
 
+thenify-all@^1.0.0, thenify-all@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/thenify-all/-/thenify-all-1.6.0.tgz#1a1918d402d8fc3f98fbf234db0bcc8cc10e9726"
+  integrity sha1-GhkY1ALY/D+Y+/I02wvMjMEOlyY=
+  dependencies:
+    thenify ">= 3.1.0 < 4"
+
+"thenify@>= 3.1.0 < 4":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/thenify/-/thenify-3.3.0.tgz#e69e38a1babe969b0108207978b9f62b88604839"
+  integrity sha1-5p44obq+lpsBCCB5eLn2K4hgSDk=
+  dependencies:
+    any-promise "^1.0.0"
+
 throat@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/throat/-/throat-4.1.0.tgz#89037cbc92c56ab18926e6ba4cbb200e15672a6a"
@@ -7599,7 +7652,7 @@ yargs@^8.0.1:
     y18n "^3.2.1"
     yargs-parser "^7.0.0"
 
-yarn@^1.10.1:
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.10.1.tgz#b792ba28f050ae94cd7e719dbca80639d70da76f"
-  integrity sha512-EH0H1fyfFxkE4UpG4b+VCaVY4I488I2EyQNmGjGGKmvsSIb0G3b+1IcfGYPI2gqa1du43g4ZA3jH8fXlq6oVxg==
+yarn@^1.22.0:
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.0.tgz#acf82906e36bcccd1ccab1cfb73b87509667c881"
+  integrity sha512-KMHP/Jq53jZKTY9iTUt3dIVl/be6UPs2INo96+BnZHLKxYNTfwMmlgHTaMWyGZoO74RI4AIFvnWhYrXq2USJkg==
