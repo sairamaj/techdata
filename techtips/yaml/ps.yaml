@@ -4,7 +4,11 @@
     description: Sets TLS in powershell.
 -
     name: ssl.ignore
-    command: '[System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true}'
+    command: '[System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true}' 
+    description: Ignores the certificate warning and let you proceed.
+-
+    name: ssl.ignore.pwsh
+    command: '-SkipCertificateCheck 
     description: Ignores the certificate warning and let you proceed.
 - 
     name: tip.showcommand
