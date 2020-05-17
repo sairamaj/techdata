@@ -6,4 +6,6 @@
 
     [Environment]::CurrentDirectory = $PWD
     # Setting working diretory for nativie commands
+
+    # Note: Careful in arguments. Each argument is in one array part
 ```
