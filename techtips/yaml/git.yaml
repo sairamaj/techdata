@@ -83,3 +83,11 @@
     name: change.permission
     command: git update-index --chmod=+x terraform-provider-apigee_v0.0.21
     description: to change the permission of linux file
+-
+    name: checkout.by.tag
+    command: git clone -b tagname --depth 1 url
+    description: git clone by tag
+-
+    name: create.tag
+    command: git tag -a tagname -m "descrption here" ; git push origin tagname
+    description: git creating tag    
