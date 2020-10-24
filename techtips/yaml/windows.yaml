@@ -38,3 +38,7 @@
   name: set.command.window.title
   command: title titlehere
   description: Sets Command window title.
+-
+  name: show.port.application
+  command: netstat -aon
+  description: Application opening the port.

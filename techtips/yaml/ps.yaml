@@ -94,4 +94,8 @@
     name: ps.credential.convert
     command: $p = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($Credentials.Password)
                   $Password = [system.runtime.interopservices.marshal]::PtrToStringAuto($p)
+-
+    name: installed.products
+    command: Get-CimInstance -Class Win32_Product | Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
+    url: https://stackoverflow.com/questions/29937568/how-can-i-find-the-product-guid-of-an-installed-msi-setup
 

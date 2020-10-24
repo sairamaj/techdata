@@ -15,6 +15,25 @@ Configuration SmtpFeatureTest
     }
 }
 ```
+```powershell
+# installing package
+Configuration InstallPowershellCore
+{
+    Import-DscResource -ModuleName PSDesiredStateConfiguration
+    Node localhost
+    {
+
+       Package PowershellCore {
+		Name       = "PowerShell 7-x64"
+		Path       = "C:\temp\PowershellCore\PowerShell-7.0.3-win-x64.msi"
+		ProductId  = "{05321FDB-BBA2-497D-99C6-C440E184C043}"
+		Ensure     = "Present"
+		LogPath    = "c:\temp\Powershellcore.installlog.txt"
+		ReturnCode = @(0, 1603)
+	}
+    }
+}   
+```
 
 ## Compile
 * . .\SmtpFeatureTest.ps1  (dot soruce)
