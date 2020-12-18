@@ -9,3 +9,61 @@ cache for 1min.
 
 customzing app service deployments.
 	https://github.com/projectkudu/kudu/wiki/Customizing-deployments
+	
+
+unit tests mapping
+            var store = new ConfigurationStore(new TypeMapFactory(), MapperRegistry.AllMappers());
+            store.AddProfile(new MappingProfile());
+            var engine = new MappingEngine(store);
+
+mocking httpclient
+
+        private IClient CreateClient(IDictionary<string, object> responses, HttpStatusCode status = HttpStatusCode.OK)
+        {
+            var userClient = new HttpClient(new HttpMessageHandlerStub(async (request, cancellationToken) =>
+            {
+                Console.WriteLine(request.RequestUri.PathAndQuery);
+                if (responses.TryGetValue(request.RequestUri.PathAndQuery, out var response))
+                {
+                    var responseMessage = new HttpResponseMessage(status)
+                    {
+                        Content = new StringContent(JsonConvert.SerializeObject(response), Encoding.UTF8, "application/json")
+                    };
+                    return await Task.FromResult(responseMessage);
+                }
+                return await Task.FromResult(new HttpResponseMessage(HttpStatusCode.NotFound));
+
+            }));
+
+            return new FluentClient(userClient, null, "https://dummy");
+
+        }
+
+
+
+
+# C# evnttracer
+* derive from EventSource
+* use WriteEvent
+* decorate with [EventSource]
+```cmd
+LOGMAN create trace ApiLogs -o C:\temp\apilogs.etl -p "{67B93CD9-33A3-44BB-BB8F-D6D4DDC9EC55}" -f bincirc -max 100
+logman /start ApiLogs
+logman /stop ApiLogs
+perfviewer
+```
+
+# cleaning the git
+git clean -n   -> will tell
+git clean -f   -> will do
+
+nuget.upload.exe
+
+
+az role assignment create --assignee 6ba75798-32bf-4db7-87d3-c5a3625c87b8 --role Contributor --scope /subscriptions/ab131891-8e37-4010-912e-0d70483d64e3/resourceGroups/servicesimulator/providers/Microsoft.Storage/storageAccounts/servicesimulator/fileServices/default/fileshares/simulatordatafiles
+
+# token with managed identity
+Invoke-WebRequest -Uri 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https%3A%2F%2Fmanagement.azure.com%2F' -Headers @{Metadata="true"}
+
+New-SelfSignedCertificate -Subject saicert -CertStoreLocation "cert:\LocalMachine\My"
+	
